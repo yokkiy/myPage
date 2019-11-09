@@ -1,0 +1,15 @@
+current directory: /Users/nishio/workspace/tweet_app/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/nishio/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20191109-92032-aclgys.rb extconf.rb
+creating Makefile
+
+current directory: /Users/nishio/workspace/tweet_app/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/nishio/workspace/tweet_app/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/nishio/workspace/tweet_app/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20191109-92032-jdtfg8/skiptrace/internal
