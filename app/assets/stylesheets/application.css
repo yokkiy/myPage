@@ -4,22 +4,37 @@ body{
 }
 
 .header-contents-wrapper{
-  background-color: #FFDDFF;
-  text-align: center;
+ list-style: none;
+  display: flex;
 }
 .wallpaper img{
 background-image:url('/images/header.png');
 width:100%;
 }
+
+
+li {
+  width: 140px;
+  text-align: center;
+  background-color: #333;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 2px;
+  display: inline-block;
+}
+
 ul li {
-  display: inline-table;
-  padding: 26px 10px 20px 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px;
 }
 
 footer{
     width: 100%;
     background-color:#FFDDFF;
-    
+    position: fixed;
+    bottom: 0;
     
 }
 .mail {
