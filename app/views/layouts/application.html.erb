@@ -9,7 +9,6 @@
   </head>
 
   <body>
-    <%= yield %>
       <header class="header">
            <div class="header-contents-wrapper">
             <ul>
@@ -26,6 +25,8 @@
       <div class="wallpaper">
           <img src="<%= asset_path "header.png" %>"height="400" />
           </div>
+    <%= yield %>
+      
       <footer>
           <p>mail:mochopuyo@yahoo.co.jp</p>
       </footer>
