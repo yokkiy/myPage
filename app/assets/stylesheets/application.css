@@ -17,10 +17,11 @@ ul li {
 }
 
 footer{
-    position: absolute;
-    bottom: 0;
     width: 100%;
     background-color:#FFDDFF;
-    text-align: center;
     
+    
+}
+.mail {
+text-align: center;
 }

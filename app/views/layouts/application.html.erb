@@ -17,7 +17,7 @@
               <li><%= link_to'自己紹介','/posts/introduction'%></li>
               <li><%= link_to'pixiv','https://www.pixiv.net/member.php?id=33824198'%></li>
               <li><%= link_to'ご意見','/posts/index'%></li>
-              <li>comming soon</li>
+              <li><%= link_to'ブログ','/posts/blog'%></li>
               <li>comming soon</li>
           </ul>
                </div>
@@ -28,7 +28,9 @@
     <%= yield %>
       
       <footer>
-          <p>mail:mochopuyo@yahoo.co.jp</p>
+          <a href="https://twitter.com/mochopuyon?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @mochopuyon</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          
+          <p class="mail">mail:mochopuyo@yahoo.co.jp</p>
       </footer>
   </body>
 </html>

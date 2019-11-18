@@ -1,6 +1,4 @@
 class PostsController < ApplicationController
-  def index
-  end
-  def introduction
+  def blog
   end
 end
