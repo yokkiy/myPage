@@ -6,6 +6,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application' %>
   </head>
 
   <body>
@@ -26,10 +27,10 @@
           <img src="<%= asset_path "header.png" %>"height="400" />
           </div>
     <%= yield %>
-      
+
       <footer>
           <a href="https://twitter.com/mochopuyon?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @mochopuyon</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          
+
           <p class="mail">mail:mochopuyo@yahoo.co.jp</p>
       </footer>
   </body>
