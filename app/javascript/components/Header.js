@@ -11,14 +11,18 @@ class Header extends React.Component {
        <ul>
         <li><Link to='/'>ホーム</Link></li>
         <li><Link to='/posts/introduction'>自己紹介</Link></li>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/'>Home</Link></li>
+        <li><a href="https://twitter.com/mochopuyon/">Twitter</a></li>
+        <li><a href='https://www.pixiv.net/member.php?id=33824198'>pixiv</a></li>
+        <li><Link to='/posts/index'>ご意見</Link></li>
+        <li><Link to='/posts/blog'>ブログ</Link></li>
        </ul>
 
        <Image/>
 
        <Route exact path='/' component={Home}/>
        <Route path='/posts/introduction' component={Introduction}/>
+       <Route path='/posts/index' component={Index}/>
+       <Route path='/posts/blog' component={Blog}/>
       </div>
 
 
@@ -46,6 +50,18 @@ function Introduction(){
   <div class="Introduction">
       <p>自己紹介ページです</p>
   </div>
+);
+}
+
+function Index(){
+ return(
+  <h1>工事中</h1>
+);
+}
+
+function Blog(){
+ return(
+  <h1>ブログ更新ページ予定地</h1>
 );
 }
 
