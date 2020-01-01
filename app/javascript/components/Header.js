@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { BrowserRouter, Route, Link } from 'react-router-dom'
+import Image from "./Image"
 
 class Header extends React.Component {
   render () {
@@ -14,7 +15,7 @@ class Header extends React.Component {
         <li><Link to='/'>Home</Link></li>
        </ul>
 
-
+       <Image/>
 
        <Route exact path='/' component={Home}/>
        <Route path='/posts/introduction' component={Introduction}/>
