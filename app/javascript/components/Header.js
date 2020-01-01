@@ -16,8 +16,8 @@ class Header extends React.Component {
 
 
 
-       <Route exact path='/' />
-       <Route path='/posts/introduction' />
+       <Route exact path='/' component={Home}/>
+       <Route path='/posts/introduction' component={Introduction}/>
       </div>
 
 
@@ -25,6 +25,27 @@ class Header extends React.Component {
     </BrowserRouter>
     );
   }
+}
+
+function Home(){
+return(
+
+  <body>
+      <a class="twitter-timeline" data-lang="ja" data-width="300" data-height="500" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/mochopuyon?ref_src=twsrc%5Etfw">Tweets by mochopuyon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  </body>
+
+);
+
+
+}
+
+function Introduction(){
+ return(
+  <div class="Introduction">
+      <p>自己紹介ページです</p>
+  </div>
+);
 }
 
 export default Header
