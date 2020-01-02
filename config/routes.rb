@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'home/login'
+
   devise_for :users
   get 'posts/blog' => "posts#blog"
 
