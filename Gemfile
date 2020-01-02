@@ -60,3 +60,4 @@ end
 
 gem 'webpacker', '~> 4.x'
 gem 'react-rails'
+gem 'devise'
