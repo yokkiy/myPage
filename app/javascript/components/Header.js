@@ -10,6 +10,7 @@ import Blog from "./Blog"
 
 
 class Header extends React.Component {
+
   render () {
     return (
     <BrowserRouter>
@@ -17,7 +18,7 @@ class Header extends React.Component {
       <div class="header-contents-wrapper">
         <TitleImage/>
        <ul>
-        <li><Link to='/'>ホーム</Link></li>
+        <li><Link to='/' >ホーム</Link></li>
         <li><Link to='/posts/introduction'>自己紹介</Link></li>
         <li><a href="https://twitter.com/mochopuyon/">Twitter</a></li>
         <li><a href='https://www.pixiv.net/member.php?id=33824198'>pixiv</a></li>
