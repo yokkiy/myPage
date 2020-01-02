@@ -8,7 +8,6 @@ import Introduction from "./Introduction"
 import Index from "./Index"
 import Blog from "./Blog"
 
-
 class Header extends React.Component {
 
   render () {
