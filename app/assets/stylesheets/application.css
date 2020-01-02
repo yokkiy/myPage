@@ -8,6 +8,7 @@ body{
 }*/
 
 .wallpaper{
+  text-align: center;
 }
 
 
@@ -19,7 +20,7 @@ body{
 
 .wallpaper img{
 background-image:url('/images/header.png');
-width:100%;
+width:80%;
 }
 
 ul {
@@ -27,7 +28,9 @@ ul {
   margin-top: -6px;
   margin-bottom: 0px;
   padding: 10px 10px 40px 10px;
+  border-bottom: medium solid #444444;
 }
+
 
 ul li {
   font-size: 20px;
