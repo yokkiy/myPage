@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import Image from "./Image"
+import TitleImage from "./Title"
 
 class Header extends React.Component {
   render () {
@@ -9,7 +10,7 @@ class Header extends React.Component {
     <BrowserRouter>
 
       <div class="header-contents-wrapper">
-
+        <TitleImage/>
        <ul>
         <li><Link to='/'>ホーム</Link></li>
         <li><Link to='/posts/introduction'>自己紹介</Link></li>

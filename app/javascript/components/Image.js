@@ -6,7 +6,7 @@ class Image extends React.Component {
   render () {
     return (
       <div class="wallpaper">
-          <img src={image} height="500" />
+          <img src={image} height="400" />
           </div>
     );
   }
