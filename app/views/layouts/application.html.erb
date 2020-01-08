@@ -8,7 +8,20 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application' %>
 
+  <div hidden>
+    <%= state = false %>
+  </div>
+    <script type="text/javascript">
 
+    function setState() {
+      state = true;
+
+        console.log(setState);
+      return state;
+
+    }
+
+    </script>
 
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -16,11 +29,14 @@
 
   <body>
       <header class="header">
-           <%= react_component("Header") %>
+           <%= react_component("App") %>
        </header>
 
+    <script type="text/javascript">
+      <%= yield %>
+    </script>
 
-    <%= yield %>
+
 
       <footer>
           <a href="https://twitter.com/mochopuyon?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @mochopuyon</a>

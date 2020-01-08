@@ -8,7 +8,7 @@ import Introduction from "./Introduction"
 import Index from "./Index"
 import Blog from "./Blog"
 
-class Header extends React.Component {
+class App extends React.Component {
 
   render () {
     return (
@@ -17,12 +17,12 @@ class Header extends React.Component {
       <div class="header-contents-wrapper">
         <TitleImage/>
        <ul>
-        <li><Link to='/' >ホーム</Link></li>
-        <li><Link to='/posts/introduction'>自己紹介</Link></li>
+        <li><Link to='/'  onClick={setState}>ホーム</Link></li>
+        <li><Link to='/posts/introduction' onClick={setState}>自己紹介</Link></li>
         <li><a href="https://twitter.com/mochopuyon/">Twitter</a></li>
         <li><a href='https://www.pixiv.net/member.php?id=33824198'>pixiv</a></li>
-        <li><Link to='/posts/index'>ご意見</Link></li>
-        <li><Link to='/posts/blog'>ブログ</Link></li>
+        <li><Link to='/posts/index' onClick={setState}>ご意見</Link></li>
+        <li><Link to='/posts/blog' onClick={setState}>ブログ</Link></li>
        </ul>
 
        <Image/>
@@ -41,4 +41,5 @@ class Header extends React.Component {
 }
 
 
-export default Header
+
+export default App
