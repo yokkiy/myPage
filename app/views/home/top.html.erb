@@ -11,7 +11,15 @@
           <a href="https://twitter.com/mochopuyon?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @mochopuyon</a>
 
           <p class="mail">mail:mochopuyo@yahoo.co.jp</p>
-          <div class="login"><%= link_to'ログイン','/home/login'%></div>
+
+          <% if user_signed_in? %>
+          <h4> ようこそ <%= current_user.email %>さん </h4>
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+
+          <% else %>
+
+          <div class="login"><%= link_to "ログイン", new_user_session_path, class: 'post' %></div>
+          <% end %>
       </footer>
   </body>
 </html>
