@@ -3,7 +3,26 @@
 
   <body>
       <header class="header">
-           <%= react_component("App") %>
+        <div class="header-contents-wrapper">
+
+     <div class ="title">
+     <%= image_tag '/assets/mochimochi.png'  %>
+   </div>
+
+    <ul>
+     <li><%= link_to'ホーム','/'%></li>
+           <li><%= link_to 'Twitter','https://twitter.com/mochopuyon/'%></li>
+           <li><%= link_to'自己紹介','/posts/introduction'%></li>
+           <li><%= link_to'pixiv','https://www.pixiv.net/member.php?id=33824198'%></li>
+           <li><%= link_to'ご意見','/posts/index'%></li>
+           <li><%= link_to'ブログ','/posts/blog'%></li>
+    </ul>
+
+    <div class="wallpaper">
+       <%= image_tag'/assets/header.png' %>
+       </div>
+
+          </div>
        </header>
 
 

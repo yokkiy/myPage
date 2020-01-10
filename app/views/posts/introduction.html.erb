@@ -1,8 +1,28 @@
+<!DOCTYPE html>
 <html>
 
   <body>
       <header class="header">
-           <%= react_component("App") %>
+        <div class="header-contents-wrapper">
+
+     <div class ="title">
+     <%= image_tag '/assets/mochimochi.png'  %>
+   </div>
+
+    <ul>
+     <li><%= link_to'ホーム','/'%></li>
+           <li><%= link_to 'Twitter','https://twitter.com/mochopuyon/'%></li>
+           <li><%= link_to'自己紹介','/posts/introduction'%></li>
+           <li><%= link_to'pixiv','https://www.pixiv.net/member.php?id=33824198'%></li>
+           <li><%= link_to'ご意見','/posts/index'%></li>
+           <li><%= link_to'ブログ','/posts/blog'%></li>
+    </ul>
+
+    <div class="wallpaper">
+       <%= image_tag'/assets/header.png' %>
+       </div>
+
+          </div>
        </header>
 
 
@@ -10,7 +30,15 @@
           <a href="https://twitter.com/mochopuyon?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @mochopuyon</a>
 
           <p class="mail">mail:mochopuyo@yahoo.co.jp</p>
-          <div class="login"><%= link_to'ログイン','/home/login'%></div>
+
+          <% if user_signed_in? %>
+          <h4> ようこそ <%= current_user.email %>さん </h4>
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+
+          <% else %>
+
+          <div class="login"><%= link_to "ログイン", new_user_session_path, class: 'post' %></div>
+          <% end %>
       </footer>
   </body>
 </html>
